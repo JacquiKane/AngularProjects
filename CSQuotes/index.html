@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>10 Great Quotes for CS Principles Class</title>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <script src="lib/angular/angular-animate.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id = "leftBlock" ng-controller='SlideViewerController'>
+      <image ng-src="images/{{pictures[indexOfPic].person}}.jpg">
+  </div>
+	<div id="rightBlock">
+	<image src="images/teachthink.jpg">
+	</div>
+<div class="main" ng-view></div>
+</body>
+</html>
